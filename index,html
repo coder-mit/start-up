@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Materialise</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <style>
+            .brand-logo i{
+                padding-left: 10px;
+            }
+            header{
+                background: url(apple.jpg);
+                background-size: cover;
+                background-position: center;
+                min-height: 650px;
+            }
+            h1{
+                padding-top: 10%;
+                font-size: 7em;
+            }
+            a#imp{
+                margin: 0% 40%;
+            }
+            
+
+
+
+
+            @media screen and (max-width: 670px){
+                .brand-logo i{
+                    padding-left: 0%;
+                }
+                header{
+                    min-height: 500px;
+                }
+                h1{
+                    font-size: 4.5em;
+                    padding-top: 20%;
+                }
+                a.btn-small{
+                    margin: 5% 33% 0%;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <!--header and navbar area-->
+        <header>
+            <nav class="nav-wrapper transparent">
+                <a href="#" class="brand-logo">
+                    <i class="material-icons white-text md-48">near_me</i>
+                </a>
+                <a href="" class="sidenav-trigger center" data-target="shoot">
+                    <i class="material-icons">more_vert</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Buy now!</a></li>
+                </ul>
+                <ul class="sidenav" id="shoot">
+                        <li><a href="#" class="red-text lighten 1">Pages</a></li>
+                        <li><a href="#" class="red-text lighten 1">Blog</a></li>
+                        <li><a href="#" class="red-text lighten 1">Team</a></li>
+                        <li><a href="#" class="red-text lighten 1">Buy now!</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l12 med12">
+                        <h1 class="center white-text" style="font-family: 'Amatic SC', cursive;">We are the next genration startup!</h1>
+                        <a href="#" id="imp" class=" btn-large white-text red lighten-1 hide-on-small-only waves-effect waves-light">know more</a>
+                        <a href="#" class=" btn-small white-text red lighten-1 hide-on-med-and-up waves-effect waves-light">know more</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            })
+        </script>
+    </body>
+</html>
