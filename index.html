@@ -68,7 +68,8 @@
             .card:hover {
                 -webkit-box-shadow: -8px 8px 0px 0px rgba(239,154,154,1) !important;
                 -moz-box-shadow: -8px 8px 0px 0px rgba(239,154,154,1);
-                box-shadow: -8px 8px 0px 0px rgba(239,154,154,1)
+                box-shadow: -8px 8px 0px 0px rgba(239,154,154,1);
+                cursor:
             }
             
             .card .card-content{
@@ -77,7 +78,9 @@
             .card .card-content h3{
                 margin-top: 0%;
             } 
-            
+            .parallax .imagepara{
+                image-rendering:optimizeSpeed;
+            }
             
             
 
@@ -121,6 +124,10 @@
                 }
                 .card .card-content 9{
                     margin-top: : ;
+                }
+                .parallax .imagepara{
+                    
+                    min-height: 5%;
                 }
             }
 
@@ -303,7 +310,19 @@
             </div>
         </div>
 
+        <!--image caraousel area-->
+        <div class="container">
+                <h3 class="black-text lighten-2 center">Look at our work gallery!</h3>
+                <div class="carousel">
+                    <img class="carousel-item" src="service--6.jpg">
+                    <img class="carousel-item" src="service--2.jpg">
+                    <img class="carousel-item" src="service--3.jpg">
+                    <img class="carousel-item" src="service--6.jpg">
+                    <img class="carousel-item" src="service--5.jpg">
+                </div>
+        </div>
 
+        
 
 
 
@@ -362,6 +381,8 @@
             $(document).ready(function(){
                 $('.sidenav').sidenav();
                 $('.materialboxed').materialbox();
+                $('.parallax').parallax();
+                $('.carousel').carousel();
             })
         </script>
     </body>
