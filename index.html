@@ -69,7 +69,6 @@
                 -webkit-box-shadow: -8px 8px 0px 0px rgba(239,154,154,1) !important;
                 -moz-box-shadow: -8px 8px 0px 0px rgba(239,154,154,1);
                 box-shadow: -8px 8px 0px 0px rgba(239,154,154,1);
-                cursor:
             }
             
             .card .card-content{
@@ -84,8 +83,36 @@
             .fonts{
                 font-family: poppins;
             }
-            
-            
+            margin{
+                margin-top: 0% !important;
+            }
+            label.active{
+                font-family: poppins !important;
+                color: #ef5350 !important;
+            }
+            .input-field input[type=email]{
+                border-bottom: 1px solid #ef5350;
+            }
+            .input-field input[type=email]:focus{
+                border-bottom:1px solid #ef5350 !important;
+            }
+            .input-field input[type=text]:focus{
+                border-bottom:1px solid #ef5350 !important;
+            }
+            .input-field input[type=text]{
+                border-bottom: 1px solid #ef5350;
+            }
+            label{
+                font-family: poppins !important;
+            }
+            textarea{
+                font-family: poppins !important;
+                border-bottom: 1px solid #ef5350 !important;
+            }
+            .input-field teaxtarea:focus{
+                border-bottom: 1px solid #ef5350;
+            }
+
 
             
 
@@ -125,12 +152,16 @@
                 .features{
                     padding-bottom: 21%;
                 }
-                .card .card-content 9{
-                    margin-top: : ;
+                .card .card-content{
+                    
                 }
                 .parallax .imagepara{
                     
                     min-height: 5%;
+                }
+                .footerarea{
+                    padding: 5% !important;
+                    box-sizing: border-box !important;
                 }
             }
 
@@ -324,6 +355,7 @@
                     <img class="carousel-item" src="service--5.jpg">
                 </div>
         </div>
+        
 
         <!--tabs area-->
 
@@ -425,16 +457,32 @@
         </div>
 
 
-
-
-
-
-
-
-        
-
-        <!--call to action header small area-->
-
+        <!--forms and footer area-->
+        <div class="footerarea" style="padding: 10%;">
+            <div class="container">
+                <h4 class="black-text center fonts margin" style="margin-top:0% !important;">Get in touch with us!</h4>
+                <p class="red-text center">Let's have a cup of coffe together!</p>
+            <form>
+                <div class="row">
+                    <div class="col l6 s12 input-field fonts white-text">
+                        <i class="material-icons prefix red-text text-lighten-1">email</i>
+                        <input type="email" id="email" class="black-text fonts">
+                        <label for="email" class="black-text">Your email<label>
+                    </div>
+                    <div class="col l5 s12 offset-l1 input-field">
+                        <i class="material-icons red-text text-lighten-1 prefix">person</i>
+                        <input id="name" type="text" class="black-text fonts">
+                        <label for="name" class="black-text">Your name</label>
+                    </div>
+                    <div class="col l12 s12 input-field">
+                            <i class="material-icons red-text text-lighten-1 prefix">chat</i>
+                            <textarea id="message" class="fonts materialize-textarea"></textarea>
+                            <label for="message" class="black-text">Leave us a message</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
         
 
 
