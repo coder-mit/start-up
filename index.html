@@ -3,6 +3,7 @@
         <title>Materialise</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
@@ -117,16 +118,11 @@
                 border: 1px solid #616161;
                 margin: 5% 0% !important;
             }
-            .fa-facebook{
-                padding: 20px;
-                border-radius: 50%;
-                font-size: 115%;
-                border: 1px solid #e53935;
-                color: #e53935;
-            }
-
-
             
+            a#ull{
+                position: relative !important;
+                top: 50%;
+            }
 
             /*media queries section*/
 
@@ -136,7 +132,7 @@
                     margin: 0% !important;
                 }
                 header{
-                    min-height: 550px;
+                    min-height: 544px;
                 }
                 h1{
                     font-size: 3em;
@@ -181,50 +177,12 @@
                 }
             }
 
-
-
-
-            /*@media screen and (max-width: 320px){
-                a.btn-small{
-                    margin: 0% 28%;
-                    font-family: poppins !important;
-                }
-                header{
-                    background-position: center;
-                }
-            }*/
-            /*
-            @media screen and (max-width: 768px) {
-                a#imp{
-                    margin: 0% 15%;
-                    font-family: poppins !important;
-                }
-            }
-            
-            @media screen and (max-width: 992px){
-                .brand-logo i{
-                    padding: 0px;
-
-                }
-                a#imp{
-                    margin: 0% 36%;
-                    font-family: poppins !important;
-                }
-            
-
-            }
-            
-            @media screen and (max-width: 1024px){
-                a#imp{
-                    margin: 0% 38%;
-                    font-family: poppins !important;
-                }
-            }*/
         </style>
     </head>
     <body>
         <!--header and navbar area-->
-        <header>
+
+        <header id="home" class="scrollspy">
             <nav class="nav-wrapper transparent">
                 <a href="#" class="brand-logo">
                     <i class="material-icons white-text">details</i>
@@ -233,57 +191,63 @@
                     <i class="material-icons">sort</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#ss">Services</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#ss">Offered services</a></li>
+                    <li><a href="#featuresid">Features</a></li>
+                    <li><a href="#pricingid">Pricing</a></li>
+                    <li><a href="#workgalleryid">Work gallery</a></li>
+                    <li><a href="#gitid">Connect</a></li>
                 </ul>
                 <ul class="sidenav" id="shoot">
-                        <li><a href="#" class="red-text lighten 1">Pages</a></li>
-                        <li><a href="#" class="red-text lighten 1">Blog</a></li>
-                        <li><a href="#" class="red-text lighten 1">Team</a></li>
-                        <li><a href="#" class="red-text lighten 1">Buy now!</a></li>
+                        <li><a href="#home" class="red-text lighten 1">Home</a></li>
+                        <li><a href="#ss" class="red-text lighten 1">Offered services</a></li>
+                        <li><a href="#featuresid" class="red-text lighten 1">Features</a></li>
+                        <li><a href="#pricingid" class="red-text lighten 1">Pricing</a></li>
+                        <li><a href="#workgalleryid" class="red-text lighten 1">Work gallery</a></li>
+                        <li><a href="#gitid" class="red-text lighten 1">Connect</a></li>
                 </ul>
             </nav>
             <div class="container">
                 <div class="row">
-                    <div class="col s12 l12 med12">
+                    <div class="col s12 l12 med12 center">
                         <h1 class="center white-text" style="font-family: poppins;">We are the next genration startup!</h1>
                     
-                        <a href="#" id="imp" class=" btn-large white-text red lighten-1 hide-on-small-only waves-effect waves-light">know more</a>
+                        <a href="#featuresid" id="imp" class=" btn-large white-text red lighten-1 hide-on-small-only waves-effect waves-light">know more</a>
                     
-                        <a href="#" class=" btn-small white-text red lighten-1 hide-on-med-and-up waves-effect waves-light">know more</a>
+                        <a href="#featuresid" class=" btn-small white-text red lighten-1 hide-on-med-and-up waves-effect waves-light">know more</a>
                     </div>
                 </div>
+                
             </div>
         </header>
 
         <!--Our services area-->
 
-        <div class="container" id="ss">
-                <h3 class="center black-text darken-1" style="margin-bottom: 1% !important;">Our offered services</h3>
-                <p class="center red-text lighten-2" style="margin-top: 0% !important;">who are in extremely love with  ecosystems!</p>
-                <div class="row">
-                    <div class="col l8 m6 s12">
-                        <img src="service--1.jpg" alt="services" class="materialboxed responsive-img">
-                    </div>
-                    <div class="col l4 m4 s12">
-                        <img src="service--2.jpg" alt="services" class="materialboxed responsive-img">
-                    </div>
+        <div class="container scrollspy" id="ss">
+            <h3 class="center black-text darken-1" style="margin-bottom: 1% !important;">Our offered services</h3>
+            <p class="center red-text lighten-2" style="margin-top: 0% !important;">who are in extremely love with  ecosystems!</p>
+            <div class="row">
+                <div class="col l8 m6 s12">
+                    <img src="service--1.jpg" alt="services" class="materialboxed responsive-img">
                 </div>
-                    <div class="row">
-                    <div class="col l4 m4 s12">
-                        <img src="service--3.jpg" alt="services" class="materialboxed responsive-img">
-                    </div>
-                    <div class="col l8 m8 s12">
-                        <img src="service--4.jpg" alt="services" class="materialboxed responsive-img">
-                    </div>
+                <div class="col l4 m4 s12">
+                    <img src="service--2.jpg" alt="services" class="materialboxed responsive-img">
                 </div>
             </div>
+            <div class="row">
+                <div class="col l4 m4 s12">
+                    <img src="service--3.jpg" alt="services" class="materialboxed responsive-img">
+                </div>
+                <div class="col l8 m8 s12">
+                    <img src="service--4.jpg" alt="services" class="materialboxed responsive-img">
+                </div>
+            </div>
+        </div>
 
 
         <!--features area-->
-        <div class="features grey lighten-4">
+
+        <div class="features grey lighten-4 scrollspy" id="featuresid">
             <h3 class="black-text lighten-2 center">Some Features that Made us Unique</h3>
             <p class="center red-text lighten-2" style="margin-top: 0% !important; margin-bottom: 5% !important;">who are in extremely love with  ecosystems!</p>
             <div class="container">
@@ -361,7 +325,8 @@
         </div>
 
         <!--image caraousel area-->
-        <div class="container">
+
+        <div class="container scrollspy" id="workgalleryid">
                 <h3 class="black-text lighten-2 center">Look at our work gallery!</h3>
                 <div class="carousel">
                     <img class="carousel-item" src="service--6.jpg">
@@ -375,7 +340,7 @@
 
         <!--tabs area-->
 
-        <div class="pricing grey lighten-4">
+        <div class="pricing grey lighten-4 scrollspy" id="pricingid">
             <div class="container section">
                 <h3 class="black-text lighten-2 center">Choose the Perfect Plan for you.</h3>
                 <p class="center red-text lighten-2" style="margin-top: 0% !important; margin-bottom: 5% !important;">who are in extremely love with  ecosystems!</p>
@@ -461,50 +426,45 @@
                                 <p class="white-text fonts ">2.5 GB Free Photos</p>
                             </div>
                         </div>
-                    </div>
-                    
-                        
+                    </div>      
                 </div>
-                
-                
-                
-            
             </div>
         </div>
 
 
-        <!--forms-->
-        <div class="footerarea" style="padding: 5%;">
+        <!--Get in touch area-->
+        <div class="footerarea scrollspy" style="padding: 5%;" id="gitid">
             <div class="container">
                 <h4 class="black-text center fonts margin" style="margin-top:0% !important;">Get in touch with us!</h4>
                 <p class="red-text center">Let's have a cup of coffe together!</p>
-            <form>
-                <div class="row">
-                    <div class="col l6 s12 input-field fonts white-text">
-                        <i class="material-icons prefix red-text text-lighten-1">email</i>
-                        <input type="email" id="email" class="black-text fonts">
-                        <label for="email" class="black-text">Your email<label>
-                    </div>
-                    <div class="col l5 s12 offset-l1 input-field">
-                        <i class="material-icons red-text text-lighten-1 prefix">person</i>
-                        <input id="name" type="text" class="black-text fonts">
-                        <label for="name" class="black-text">Your name</label>
-                    </div>
-                    <div class="col l12 s12 input-field">
+                <form>
+                    <div class="row">
+                        <div class="col l6 s12 input-field fonts white-text">
+                            <i class="material-icons prefix red-text text-lighten-1">email</i>
+                            <input type="email" id="email" class="black-text fonts">
+                            <label for="email" class="black-text">Your email<label>
+                        </div>
+                        <div class="col l5 s12 offset-l1 input-field">
+                            <i class="material-icons red-text text-lighten-1 prefix">person</i>
+                            <input id="name" type="text" class="black-text fonts">
+                            <label for="name" class="black-text">Your name</label>
+                        </div>
+                        <div class="col l12 s12 input-field">
                             <i class="material-icons red-text text-lighten-1 prefix">message</i>
                             <textarea id="message" class="fonts materialize-textarea"></textarea>
                             <label for="message" class="black-text">Leave us a message</label>
+                        </div>
+                        <div class="center">
+                            <button class="btn red lighten-1">submit</button>
+                        </div>
                     </div>
-                    <div class="center">
-                        <button class="btn red lighten-1">submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
         </div>
 
         <!--footer area-->
-        <div class="page-footer black darken-3">
+
+        <div class="page-footer black darken-3" id="footerid">
             <div class="container section">
                 <div class="row">
                     <div class="col l4 s12 center">
@@ -514,21 +474,26 @@
                     </div>
                     <div class="col l3 s12 offset-l5">
                         <ul class="center" style="padding: 0% !important; margin: 0% !important;">
-                            <li><a href="#" class="white-text fonts">Services offered</a></li>
-                            <li><a href="#" class="white-text fonts">Features</a></li>
-                            <li><a href="#" class="white-text fonts">Work gallery</a></li>
-                            <li><a href="#" class="white-text fonts">Pricing</a></li>
-                            <li><a href="#" class="white-text fonts">Get in touch</a></li>
+                            <li><a href="#home" class="white-text fonts">Back to top</a></li>
+                            <li><a href="#ss" class="white-text fonts">Offered services</a></li>
+                            <li><a href="#featuresid" class="white-text fonts">Features</a></li>
+                            <li><a href="#pricingid" class="white-text fonts">Pricing</a></li>
+                            <li><a href="#workgalleryid" class="white-text fonts">Wor allery</a></li>
+                            <li><a href="#gitid" class="white-text fonts">connect</a></li>
                         </ul>
                     </div>
                     <div class="col s12 l12">
                         <hr id="fhr">
                     </div>
-                    <h5 class="white-text center fonts">&copy;Copyright by mit rao.</h5>
-        </div>
-                
-               
-                
+                </div>
+                <div class="container center">
+                    <a href="#" class="btn-floating btn-large red darken-2"><i class="fab fa-facebook white-text small"></i></a>
+                    <a href="#" class="btn-floating btn-large red darken-2"><i class="fab fa-instagram white-text small"></i></a>
+                    <a href="#" class="btn-floating btn-large red darken-2"><i class="fab fa-github white-text small"></i></a>
+                </div>
+                <h5 class="white-text center fonts">&copy;Copyright by mit rao.</h5>
+            </div>
+        </div>    
                 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -539,6 +504,7 @@
                 $('.parallax').parallax();
                 $('.carousel').carousel();
                 $('.tabs').tabs();
+                $('.scrollspy').scrollSpy();
             })
         </script>
     </body>
